@@ -13,6 +13,13 @@ Do:
 flask run
 ```
 
+### Closing the app
+Do:
+Ctrl + C
+```
+exit
+```
+
 In your browser, navigate to: http://127.0.0.1:5000/
 
 
