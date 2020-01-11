@@ -1,6 +1,6 @@
 # Using the App
 ### Installation
-First, clone the repo. Then, in terminal do:
+First, clone the repo. Then, in terminal navigate into the repo folder and do:
 ```
 - poetry install
 - poetry shell
@@ -19,8 +19,7 @@ In your browser, navigate to: http://127.0.0.1:5000/
 # Design decisions
 - Working off the instructions to create core functionality and not consider extraneous features, I approached this as a barebones MVP and left the front-end as minimal as functionally reasonable.
 - Creation date: Although I considered setting the creation date automatically, I ultimately chose to have a manually-entered date since the entity might have been created on a different date than the current day. Form validation and automated date-formatting would be an immediate next-step.
-- I chose to have the entity creation and Snapgene file upload be a separate process. Although this requires slightly more clicking for the end-user, it was simpler on the dev side and I believe that it could be improved on easily after the MVP has been met.
-- I chose to use a SQL database because the relations seemed well-contrained. I added an id field to each entity type in order to maintain uniqueness.
+- I chose to use a SQL database because the relations seemed well-contrained. I added an id key field to each entity type in order to maintain uniqueness.
 - I chose Sqlite instead of the usual Postgres to improve ease of installation of the app. With Postgres, the contains_plasmids and contains_genes fields would be foreign key stores and the snapgene_files fields would be file system paths.
 
 # Next Steps
