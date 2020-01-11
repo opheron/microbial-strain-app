@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+   <body>
+
+    <table border=1>
+        <caption><h1>Microbial Strains</h1></caption>
+        <tr>
+            <th>Description</th>
+            <th>Created By</th>
+            <th>Creation Date</th>
+            <th>Notes</th>
+            <th>Contains Plasmids</th>
+        </tr>
+        {% for strain in strains %}
+            <tr>
+                <td>{{ strain.description }}</td>
+                <td>{{ strain.created_by }}</td>
+                <td>{{ strain.creation_date }}</td>
+                <td>{{ strain.notes }}</td>
+                <td>{{ strain.contains_plasmids }}</td>
+        {% endfor %}
+    </table>
+   </body>
+</html>

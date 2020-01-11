@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <body>
+      {% with messages = get_flashed_messages() %}
+         {% if messages %}
+            <ul>
+               {% for message in messages %}
+               <li>{{ message }}</li>
+               {% endfor %}
+            </ul>
+         {% endif %}
+      {% endwith %}
+        
+        <h1>Strains</h1>
+        <a href="strains">Display strains</a>
+        <br />
+        <a href="strains/create">Create strains</a>
+        <h1>Plasmids</h1>
+        <a href="plasmids">Display plasmids</a>
+        <br />
+        <a href="plasmids/create">Create plasmids</a>
+        <h1>Genes</h1>
+        <a href="genes">Display genes</a>
+        <br />
+        <a href="genes/create">Create genes</a>
+   </body>
+</html>

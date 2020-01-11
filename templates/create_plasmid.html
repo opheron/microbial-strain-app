@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+        <form action = "/plasmids" method="POST" enctype="multipart/form-data">
+            Insert: <input type="text" name="insert" />
+            <br /><br />
+            Promoter: <input type="text" name="promoter" />
+            <br /><br />
+            Created By: <input type="text" name="created_by" />
+            <br /><br />
+            Creation Date (ex. 2020-01-11): <input type="text" name="creation_date" />
+            <br /><br />
+            Notes: <input type="text" name="notes" />
+            <br /><br />
+            <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+            <br /><br />
+            Contains Genes: <input type="text" name="contains_genes" />
+            <br /><br />
+            <input type="submit" value="Submit">
+        </form>
+   </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <body>
+
+    <table border=1>
+        <caption><h1>Plasmids</h1></caption>
+        <tr>
+            <th>Insert</th>
+            <th>Promoter</th>
+            <th>Created By</th>
+            <th>Creation Date</th>
+            <th>Notes</th>
+            <th>Snapgene Files</th>
+            <th>Contains Genes</th>
+        </tr>
+        {% for plasmid in plasmids %}
+            <tr>
+                <td>{{ plasmid.insert }}</td>
+                <td>{{ plasmid.promoter }}</td>
+                <td>{{ plasmid.created_by }}</td>
+                <td>{{ plasmid.creation_date }}</td>
+                <td>{{ plasmid.notes }}</td>
+                <td>{{ plasmid.snapgene_files }}</td>
+                <td>{{ plasmid.contains_genes }}</td>
+        {% endfor %}
+    </table>
+   </body>
+</html>
