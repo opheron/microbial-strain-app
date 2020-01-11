@@ -1,6 +1,12 @@
 # Using the App
 ### Installation
-First, clone the repo. Then, in terminal navigate into the repo folder and do:
+First, clone the repo. Then, in terminal navigate into the repo folder and install Poetry with this command:
+```
+- curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+```
+If the above does not work, check here for more info on Poetry: https://pypi.org/project/poetry/
+
+Then, do:
 ```
 - poetry install
 - poetry shell
