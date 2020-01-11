@@ -1,8 +1,20 @@
-# Installation and Running
+# Using the App
+### Installation
+First, clone the repo. Then, in terminal do:
 ```
 - poetry install
 - poetry shell
+- python setup_database.py
 ```
+
+### Running the app
+Do:
+```
+flask run
+```
+
+In your browser, navigate to: http://127.0.0.1:5000/
+
 
 # Design decisions
 - Working off the instructions to create core functionality and not consider extraneous features, I approached this as a barebones MVP and left the front-end as minimal as functionally reasonable.
