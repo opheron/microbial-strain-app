@@ -130,4 +130,5 @@ dmypy.json
 
 # data
 .sqlite
-uploads/
+uploads/genes/*.*
+uploads/plasmids/*.*
