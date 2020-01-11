@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # data
-.sqlite
+*.sqlite
 uploads/genes/*.*
 uploads/plasmids/*.*
